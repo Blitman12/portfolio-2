@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #6b9794;
+}
+
+body {
+    background-color: #222;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:#372f34;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    color: #6b9794;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+nav ul li {
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+/* Landing and hero image */
+header {
+    background-image: url('./assets/images/a.jpeg');
+    height: 880px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+header section img {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    height: 600px;
+    margin-top: 40px;
+}
+
+header main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+header main h1 b{
+  font-size: 3em;
+  font-style: italic;
+  color: pink;
+}
+
+header main p {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+/* About me and Skills */
+section h2 {
+    font-size: 55px;
+    color: #6b9794;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 25%;
+    margin-top: 25px;
+}
+
+.about-skills-container {
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: space-around;
+}
+
+.container-text {
+    flex: 1;
+    text-align: center;
+}
+
+.container-image {
+    flex: 1;
+    height: 100%;
+}
+
+.skill-image {
+    flex: 1;
+    height: 100%;
+}
+
+.skill-text {
+    flex: 1;
+    text-align: center;
+}
+
+
+/* .about-skills-container {
+    display: flex;
+    align-items: center;
+}
+
+.container-image {
+    flex-basis: 40%;
+    margin-left: 400px;
+}
+
+.container-text {
+    font-size: 20px;
+    padding-left: 20px;
+    margin-right: 300px;
+    margin-left: 400px;
+    border-left: 3px solid;
+}
+
+.skill-image {
+    flex-basis: 40%;
+    margin-left: auto;
+}
+
+.skill-text {
+    font-size: 20px;
+    padding-right: 20px;
+    margin-left: 520px;
+    margin-right: 100px;
+    border-right: 3px solid;
+} */
+
+
+section article img {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    height: 400px;
+}
