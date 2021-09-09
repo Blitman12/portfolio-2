@@ -80,6 +80,8 @@ header main h1 b{
 header main p {
     font-weight: lighter;
     font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 /* About me and Skills */
@@ -120,6 +122,10 @@ section h2 {
 
 #skills-section {
     margin-bottom: 25px;
+}
+
+#skills-photo {
+    width: 450px;
 }
 
 
