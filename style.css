@@ -34,7 +34,7 @@ nav ul {
 nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 nav ul li {
@@ -103,6 +103,7 @@ section h2 {
 .about-skills-container {
     display: flex;
     justify-content: space-around;
+    margin: 0 300px;
 }
 
 .container-text {
@@ -113,7 +114,14 @@ section h2 {
 .container-text li {
     list-style-type: none;
     line-height: 25px;
+    margin-top: 27px;
+    margin-left: 50px;
 }
+
+#skills-section {
+    margin-bottom: 25px;
+}
+
 
 
 
