@@ -11,7 +11,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#372f34;
+    /* background-color:#372f34; */
+    background-color: #222;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -84,7 +85,7 @@ header main {
 header main h1 b{
   font-size: 3em;
   font-style: italic;
-  color: pink;
+  color: #e0b0d5;
 }
 
 header main p {
@@ -160,20 +161,23 @@ section h2 {
 
 
 /* Star project  */
-.star {
+#gradient {
+    background-image: linear-gradient(#222, #121619);
+    height: 200px;
+}
+
+.main-project {
     clip-path: circle(50% at 50% 50%);
     width: 900px;
+    padding: 40px 0;
 }
 
 #star-project {
-    background-color: #6b9794;
+    background: #121619;
     padding-top: 75px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
-#star-title {
-    color: #222;
-}
 
 #star-display {
     display: flex;
@@ -181,25 +185,123 @@ section h2 {
 }
 
 section article h3 {
-    color: #222;
     text-align: center;
     padding-top: 25px;
     font-size: 30px;
 }
 #star-project article p {
-    color: #222;
     text-align: center;
     padding-top: 10px;
     font-size: 20px;
 }
 
-#star-project article b {
-    color: #222;
+/* portfolio */
+#gradient-2 {
+    background-image: linear-gradient( #121619 ,#222);
+    height: 200px;
 }
 
-#star-project article a {
-    color: #222;
+#portfolio {
+    background-color: #222;
+    padding-top: 75px;
 }
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.portfolio-card div {
+    background-color:#121619;
+    padding: 20px;
+}
+
+.portfolio-card h4 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.portfolio-card img {
+    width: 600px;
+    height: 400px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+/* contact page */
+#contact {
+    padding-top: 75px;
+    padding-bottom: 150px;
+    background-color: #121619;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 300px;
+    margin-top: 150px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    line-height: 30px;
+}
+
+#button {
+    width: 100px;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    color: black;
+}
+
+#message {
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121619;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .logo {
+    margin-left: 30px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 30px;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer ul li a {
+    font-weight: lighter;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
 
 /* Large Width */
 @media (max-width: 1300px) {
@@ -221,9 +323,16 @@ section article h3 {
         width: 700px;
     }
 
-    .star {
+    .main-project {
         width: 600px;
     }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 /* Medium Width */
@@ -259,6 +368,17 @@ section article h3 {
     .about-container-text {
         width: 400px;
     }
+
+    .portfolio-card img {
+        width: 500px;
+        height: 350px;
+    }
+
+    .contact-card {
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 /* small Width */
@@ -273,7 +393,7 @@ section article h3 {
         width: 300px;
     }
 
-    .star {
+    .main-project {
         width: 300px;
     }
 
@@ -283,7 +403,19 @@ section article h3 {
 
     .skills-container {
         margin: 0 auto;
+    }
 
+    .portfolio-card img {
+        width: 300px;
+        height: 170px;
+    }
+
+    .contact-card {
+        margin: auto;
+    }
+
+    .contact-form {
+        width: 200px;
     }
 }
 
@@ -317,7 +449,7 @@ section article h3 {
         height: 200px;
     }
 
-    .star {
+    .main-project {
         width: 250px;
     }
 
@@ -332,6 +464,7 @@ section article h3 {
     .star-p {
         font-size: 18px;
     }
+
 }
 
 
