@@ -65,14 +65,6 @@ header {
     flex-direction: column;
     padding-top: 75px;
     transform: scale(1);
-
-
-    /* height: 880px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column; */
 }
 
 
@@ -176,9 +168,12 @@ section h2 {
 }
 
 .main-project {
-    clip-path: circle(50% at 50% 50%);
     width: 900px;
-    padding: 40px 0;
+    padding: 40px 40px;
+    border-radius: 85px;
+    background: linear-gradient(145deg, #101417, #13181b);
+    box-shadow:  31px 31px 72px #080a0c,
+             -31px -31px 72px #1c2227;
 }
 
 #star-project {
@@ -224,8 +219,11 @@ section article h3 {
 }
 
 .portfolio-card div {
-    background-color:#121619;
     padding: 20px;
+    border-radius: 55px;
+    background: linear-gradient(225deg, #1f1f1f, #242424);
+    box-shadow:  -23px 23px 34px #1a1a1a,
+             23px -23px 34px #2b2b2b;
 }
 
 .portfolio-card h4 {
@@ -236,6 +234,7 @@ section article h3 {
 .portfolio-card img {
     width: 600px;
     height: 400px;
+    border-radius: 55px;
 }
 
 .portfolio-container {
@@ -258,6 +257,7 @@ section article h3 {
     margin: 0 300px;
     margin-top: 150px;
 }
+
 
 .contact-form {
     display: flex;
