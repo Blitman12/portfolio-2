@@ -77,6 +77,10 @@ header {
     width: 100%;
 }
 
+header section span {
+    filter: drop-shadow(0px 0px 5px #222);
+}
+
 header main {
     display: flex;
     flex-direction: column;
@@ -104,6 +108,10 @@ header main p {
 #about-me {
     padding-top: 75px;
     padding-bottom: 150px;
+}
+
+.about-skills-photo {
+    filter: drop-shadow(0px 0px 10px #101211);
 }
 
 #skills {
@@ -182,7 +190,6 @@ section h2 {
     padding-bottom: 70px;
 }
 
-
 #star-display {
     display: flex;
     justify-content: center;
@@ -216,6 +223,7 @@ section article h3 {
     width: auto;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .portfolio-card div {
@@ -258,12 +266,19 @@ section article h3 {
     margin-top: 150px;
 }
 
+.image-wrap:hover {
+    filter: drop-shadow(0px 0px 5px #6b9794);
+}
 
 .contact-form {
     display: flex;
     flex-direction: column;
     width: 500px;
     line-height: 30px;
+}
+
+.contact-card span {
+    filter: drop-shadow(0px 0px 15px #83EEFF);
 }
 
 #button {
@@ -277,6 +292,8 @@ section article h3 {
 #message {
     height: 200px;
 }
+
+
 
 /* Footer */
 footer {
@@ -387,6 +404,10 @@ footer ul li a {
         align-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    section h2 {
+        width: 50%;
     }
 }
 
