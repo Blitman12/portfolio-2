@@ -64,7 +64,7 @@ nav ul li a:hover{
 
 /* Landing and hero image */
 header {
-    background: url('assets/images/a.jpeg') no-repeat 50% fixed;
+    background: url('/assets/images/a.jpeg') no-repeat 50% fixed;
     position: relative;
     width: 100%;
     height: 100vh;
