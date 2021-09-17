@@ -78,8 +78,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 75px;
-    padding-bottom: 50px;
+    padding: 75px 0px;
     transform: scale(1);
 }
 
@@ -403,6 +402,7 @@ footer ul li a {
         flex-direction: column-reverse;
         height: 1000px;
     }
+
 
     #header-title p {
         color: black;
