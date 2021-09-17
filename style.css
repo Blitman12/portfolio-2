@@ -1,13 +1,19 @@
+:root {
+    --primary-color: #6b9794;
+    --secondary-color: #222;
+    --tertiary-color: #121619;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #6b9794;
+    color: var(--primary-color);
 }
 
 h2 {
     font-size: 55px;
-    color: #6b9794;
+    color: var(--primary-color);
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -21,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
+    background-color: var(--secondary-color);
     flex-wrap: wrap;
     width: 100%;
     z-index: 1;
@@ -31,7 +37,7 @@ nav {
 /* logo used in footer as well */
 
 .logo {
-    color: #6b9794;
+    color: var(--primary-color);
     width: 40px;
     height: 40px;
 }
@@ -67,18 +73,18 @@ header {
     background: url('assets/images/a.jpeg') no-repeat 50% fixed;
     position: relative;
     width: 100%;
-    height: 100vh;
     -webkit-background-size: cover;
     background-size: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 75px;
+    padding-bottom: 50px;
     transform: scale(1);
 }
 
 header section span {
-    filter: drop-shadow(0px 0px 5px #222);
+    filter: drop-shadow(0px 0px 5px var(--secondary-color));
 }
 
 #main-profile-photo {
@@ -90,19 +96,19 @@ header section span {
     width: 100%;
 }
 
-header main {
+#header-title {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 }
 
-header main h1 b{
+#header-title h1 b{
   font-size: 3em;
   font-style: italic;
   color: #e0b0d5;
 }
 
-header main p {
+#header-title p {
     font-weight: lighter;
     font-size: 24px;
     text-align: center;
@@ -116,7 +122,7 @@ header main p {
 }
 
 #about-me, #skills {
-    background-color:#222;
+    background-color:var(--secondary-color);
 }
 
 .about-skills-photo {
@@ -151,7 +157,7 @@ header main p {
     text-align: center;
     padding: 30px;
     border-radius: 89px;
-    background: #222222;
+    background: var(--secondary-color);
     box-shadow: inset -12px 12px 10px #151515,
                 inset 12px -12px 10px #2f2f2f;
 }
@@ -171,7 +177,7 @@ header main p {
 
 /* Star project  */
 .gradient {
-    background-image: linear-gradient(#222, #121619);
+    background-image: linear-gradient(var(--secondary-color), var(--tertiary-color));
     height: 200px;
 }
 
@@ -179,13 +185,13 @@ header main p {
     width: 900px;
     padding: 40px 40px;
     border-radius: 66px;
-    background: #121619;
+    background: var(--tertiary-color);
     box-shadow:  8px 8px 16px #080a0b,
                  -8px -8px 16px #1c2227;
 }
 
 #main-project {
-    background: #121619;
+    background: var(--tertiary-color);
     padding-top: 75px;
     padding-bottom: 70px;
 }
@@ -209,12 +215,12 @@ section article h3 {
 
 /* portfolio */
 #gradient-2 {
-    background-image: linear-gradient( #121619 ,#222);
+    background-image: linear-gradient( var(--tertiary-color) ,var(--secondary-color));
     height: 200px;
 }
 
 #portfolio {
-    background-color: #222;
+    background-color: var(--secondary-color);
     padding-top: 75px;
 }
 
@@ -230,7 +236,7 @@ section article h3 {
 .portfolio-card div {
     padding: 40px;
     border-radius: 89px;
-    background: #222222;
+    background: var(--secondary-color)222;
     box-shadow: inset -12px 12px 10px #151515,
                 inset 12px -12px 10px #2f2f2f;
 }
@@ -256,7 +262,7 @@ section article h3 {
 #contact {
     padding-top: 75px;
     padding-bottom: 150px;
-    background-color: #121619;
+    background-color: var(--tertiary-color);
 }
 
 #contact-card {
@@ -268,7 +274,7 @@ section article h3 {
 }
 
 .image-wrap:hover {
-    filter: drop-shadow(0px 0px 5px #6b9794);
+    filter: drop-shadow(0px 0px 5px var(--primary-color));
 }
 
 #contact-form {
@@ -277,7 +283,7 @@ section article h3 {
     width: 500px;
     line-height: 30px;
     border-radius: 66px;
-    background: #121619;
+    background: var(--tertiary-color);
     box-shadow:  8px 8px 16px #080a0b,
                  -8px -8px 16px #1c2227;
                 padding: 40px;
@@ -306,7 +312,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #121619;
+    background-color: var(--tertiary-color);
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -389,7 +395,7 @@ footer ul li a {
         margin-bottom: 300px;
     }
 
-    header main h1 b {
+    #header-title h1 b {
         font-size: 2em;
     }
 
@@ -398,7 +404,7 @@ footer ul li a {
         height: 1000px;
     }
 
-    header main p {
+    #header-title p {
         color: black;
     }
 
@@ -476,7 +482,7 @@ footer ul li a {
         margin-bottom: 100px;
     }
 
-    header main h1 b {
+    #header-title h1 b {
         font-size: 1.2em;
     }
 
